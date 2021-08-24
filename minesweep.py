@@ -139,17 +139,17 @@ class MinesweepGame(object):
         rsz = (self.scale-2*self.b, self.scale-2*self.b)
         brdr = (self.b, self.b)
         self.canvas= Canvas(self.root, width=self.game.n*self.scale, height=self.game.m*self.scale)
-        self.c_flag = ImageTk.PhotoImage(ImageOps.expand(Image.open("covered_flag.jpg").resize(rsz, Image.ANTIALIAS), border=brdr, fill=(127, 127, 127)))
-        self.c_flag_wrong = ImageTk.PhotoImage(ImageOps.expand(Image.open("covered_flag_wrong.jpg").resize(rsz, Image.ANTIALIAS), border=brdr, fill=(127, 127, 127)))
-        self.unc = ImageTk.PhotoImage(ImageOps.expand(Image.open("uncovered1.jpg").resize(rsz, Image.ANTIALIAS), border=brdr, fill=(127, 127, 127)))
-        self.c = ImageTk.PhotoImage(ImageOps.expand(Image.open("covered.jpg").resize(rsz, Image.ANTIALIAS), border=brdr, fill=(127, 127, 127)))
+        self.c_flag = ImageTk.PhotoImage(ImageOps.expand(Image.open("images/covered_flag.jpg").resize(rsz, Image.ANTIALIAS), border=brdr, fill=(127, 127, 127)))
+        self.c_flag_wrong = ImageTk.PhotoImage(ImageOps.expand(Image.open("images/covered_flag_wrong.jpg").resize(rsz, Image.ANTIALIAS), border=brdr, fill=(127, 127, 127)))
+        self.unc = ImageTk.PhotoImage(ImageOps.expand(Image.open("images/uncovered1.jpg").resize(rsz, Image.ANTIALIAS), border=brdr, fill=(127, 127, 127)))
+        self.c = ImageTk.PhotoImage(ImageOps.expand(Image.open("images/covered.jpg").resize(rsz, Image.ANTIALIAS), border=brdr, fill=(127, 127, 127)))
 
-        self.mine = ImageTk.PhotoImage(ImageOps.expand(Image.open("mine.png").resize(rsz, Image.ANTIALIAS), border=brdr, fill=(127, 127, 127)))
-        self.mine_red = ImageTk.PhotoImage(ImageOps.expand(Image.open("mine_red.png").resize(rsz, Image.ANTIALIAS), border=brdr, fill=(127, 127, 127)))
+        self.mine = ImageTk.PhotoImage(ImageOps.expand(Image.open("images/mine.png").resize(rsz, Image.ANTIALIAS), border=brdr, fill=(127, 127, 127)))
+        self.mine_red = ImageTk.PhotoImage(ImageOps.expand(Image.open("images/mine_red.png").resize(rsz, Image.ANTIALIAS), border=brdr, fill=(127, 127, 127)))
 
-        self.good = ImageTk.PhotoImage(ImageOps.expand(Image.open("good.png").resize((self.scale, self.scale)), fill=(127, 127, 127)))
-        self.win = ImageTk.PhotoImage(ImageOps.expand(Image.open("win.png").resize((self.scale, self.scale)), fill=(127, 127, 127)))
-        self.dead = ImageTk.PhotoImage(ImageOps.expand(Image.open("dead.png").resize((self.scale, self.scale)), fill=(127, 127, 127)))
+        self.good = ImageTk.PhotoImage(ImageOps.expand(Image.open("images/good.png").resize((self.scale, self.scale)), fill=(127, 127, 127)))
+        self.win = ImageTk.PhotoImage(ImageOps.expand(Image.open("images/win.png").resize((self.scale, self.scale)), fill=(127, 127, 127)))
+        self.dead = ImageTk.PhotoImage(ImageOps.expand(Image.open("images/dead.png").resize((self.scale, self.scale)), fill=(127, 127, 127)))
 
         for i in range(self.size[0]):
             for j in range(self.size[1]):
