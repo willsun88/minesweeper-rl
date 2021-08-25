@@ -1,2 +1,2 @@
 # minesweeper-rnn
-Creating Minesweeper from scratch, then training an RNN to play it
+Creating Minesweeper from scratch, then training a NN to play it
