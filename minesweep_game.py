@@ -2,7 +2,7 @@ from tkinter import *
 import random
 from PIL import ImageTk, Image, ImageOps
 from time import time
-from minesweep import Minesweep, MinesweepGame
+from minesweep import Minesweep, Game
 
 # Game parameters
 size = (10, 10)
@@ -12,5 +12,5 @@ b = 2
 pad = 120
 
 # Run the game
-game = MinesweepGame(size, numMines, scale, b, pad)
+game = Game(size, numMines, scale, b, pad)
 game.minesweep()

@@ -3,7 +3,7 @@ import random
 from PIL import ImageTk, Image, ImageOps
 from time import time
 
-class MinesweepGame(object):
+class Game(object):
     def __init__(self, size, numMines, scale, b, pad):
         self.colors = {-1: "black", 0: "black", 1: "blue", 2: "green", 3: "red", 4: "purple", 5: "black", 6: "maroon", 7: "gray", 8: "turquoise"}
         self.timeOn = False
